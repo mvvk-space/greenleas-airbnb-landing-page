@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Airbnb Property Landing Page for Greenleas | Greenleas</title>
+    <meta name="description" content="Discover Greenleas, a charming Airbnb property with stunning visuals, a warm introduction, and competitive pricing. Experience a modern and pastel-themed getaway.">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-sans text-2xl font-bold tracking-tight text-gray-900">
+                        Greenleas
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#welcome" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Home</a>
+                    <a href="#bedrooms" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Bedrooms</a>
+                    <a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Services</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Reviews</a>
+                    <a href="https://www.airbnb.com/rooms/735576681072241973" target="_blank" class="bg-green-900 hover:bg-green-800 text-white px-6 py-2.5 rounded-full font-medium transition-all transform hover:scale-105 shadow-md">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#welcome" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Home</a>
+                <a href="#bedrooms" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Bedrooms</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Services</a>
+                <a href="#reviews" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Reviews</a>
+                <a href="https://www.airbnb.com/rooms/735576681072241973" target="_blank" class="block px-3 py-2 text-base font-medium text-green-700 hover:text-green-900 font-bold">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[600px] md:h-[700px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_6950-m7V3zbGQE3Hp4Dp6.jpeg" alt="Greenleas Living Room" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold text-white font-display mb-6 tracking-tight drop-shadow-lg">
+                Greenleas
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-100 mb-10 font-light max-w-2xl mx-auto leading-relaxed">
+                Discover a unique Airbnb experience in a modern, pastel-inspired setting. Book your stay today!
+            </p>
+            <a href="https://www.airbnb.com/rooms/735576681072241973" target="_blank" class="inline-block bg-green-900 hover:bg-green-800 text-white text-lg font-medium px-8 py-4 rounded-full transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                Book Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <!-- Text Content -->
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-display">
+                        Welcome to Greenlease
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Discover a unique and stylish getaway at our charming Airbnb property, designed for comfort and relaxation. Experience modern amenities in a pastel-themed setting that feels like home.
+                    </p>
+                    
+                    <!-- Images (Mobile Stacked, Desktop Side by Side or Grid) -->
+                    <div class="grid grid-cols-1 gap-6 mt-8">
+                         <!-- Note: In original, these were large hero-like images. We stack them for better UI flow in this rebuild -->
+                        <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5793-AoPWaeVL2Dt1bJXd.jpeg" alt="Interior Design" class="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover transform hover:scale-[1.02] transition-transform duration-500">
+                        <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5803-A0xlLNpaooi1E2z5.jpeg" alt="Bedroom Detail" class="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover transform hover:scale-[1.02] transition-transform duration-500">
+                    </div>
+                </div>
+                
+                <!-- Image Content (Desktop) -->
+                <div class="order-1 lg:order-2 relative">
+                     <!-- Using a placeholder/grid approach for desktop to match original 2-column feel but keeping it clean -->
+                     <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5793-AoPWaeVL2Dt1bJXd.jpeg" alt="Greenleas Interior" class="w-full h-[600px] object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8">
+                             <p class="text-white text-xl font-medium">Modern & Comfortable</p>
+                        </div>
+                     </div>
+                     <!-- Decorative offset image -->
+                     <div class="absolute -bottom-10 -left-10 w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-xl border-4 border-white z-10 hidden md:block">
+                        <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5803-A0xlLNpaooi1E2z5.jpeg" alt="Detail" class="w-full h-full object-cover">
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bedrooms Section -->
+    <section id="bedrooms" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-display">Greenleas Bedrooms</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Rest easy in our thoughtfully designed rooms.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Bedroom 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5796-dWxv6lKz5kI7GG7g.jpeg" alt="Bedroom 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Bedroom 1</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Bedroom 1 is spacious and thoughtfully designed, offering a cozy retreat with comfortable furnishings, ample storage, and large windows that let in plenty of natural light.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bedroom 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5806-dWxv6lk9X6saMwVM.jpeg" alt="Bedroom 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Bedroom 2</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Bedroom 2 is conveniently connected to the kitchen and work area, offering a comfortable and private space with modern furnishings and easy access to the main living areas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bedroom 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5809-YbNB6964xLf51GE9.jpeg" alt="Bedroom 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Bedroom 3</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Bedroom 3 is a cool and comfortable retreat, featuring air conditioning for a refreshing stay, ensuring a restful sleep no matter the weather.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-display">Our Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We provide plenty of space for you to enjoy your relaxing time at Greenleas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Services List -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-green-100 p-3 rounded-full text-green-800 mt-1">
+                            <i data-feather="layout"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 font-display">Spacious Work space</h3>
+                            <p class="text-gray-600">The spacious work area offers a comfortable and productive environment, perfect for focusing on tasks or creative projects, all while enjoying a beautiful view. High-speed Wi-Fi is available throughout.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-green-100 p-3 rounded-full text-green-800 mt-1">
+                            <i data-feather="coffee"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 font-display">Huge Kitchen Area</h3>
+                            <p class="text-gray-600">The spacious kitchen area is fully equipped, offering plenty of room for cooking and entertaining, making it ideal for preparing meals with ease and comfort.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-green-100 p-3 rounded-full text-green-800 mt-1">
+                            <i data-feather="sun"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 font-display">Beautiful Garden Area</h3>
+                            <p class="text-gray-600">The garden area is beautifully landscaped, providing a peaceful and scenic space to relax, unwind, or enjoy outdoor activities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Images Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5811-A0xlLVg336FWraQ1.jpeg" class="rounded-xl shadow-md w-full h-48 object-cover hover:opacity-90 transition-opacity">
+                        <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5801-Yyv9eoVWo0uXGLww.jpeg" class="rounded-xl shadow-md w-full h-64 object-cover hover:opacity-90 transition-opacity">
+                    </div>
+                    <div class="pt-8">
+                         <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5795-YbNB6aVPvNcv97x9.jpeg" class="rounded-xl shadow-md w-full h-64 object-cover hover:opacity-90 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-display">Customer Reviews</h2>
+                <p class="text-gray-600">Discover what our clients think about our service</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md relative">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gray-100 rounded-t-2xl overflow-hidden">
+                        <div class="h-full bg-green-900 w-1/3"></div>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 text-xl">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-6 leading-relaxed">
+                        "The place was lovely and so spacious! The views were incredible and the pool table/games room was a great addition! Simon was super helpful and communicative despite not being there in person - going out of his way to help us multiple times! Would 100% stay again!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-bold mr-3">
+                            <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5814-mP4O6nerkEhDvpbw.jpeg" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <span class="font-bold text-gray-900">Daniel, Airbnb</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md relative">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gray-100 rounded-t-2xl overflow-hidden">
+                        <div class="h-full bg-green-900 w-1/3"></div>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 text-xl">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-6 leading-relaxed">
+                        "Awesome stay at Simon's place. Impeccable welcome, Simon picked us up in the village. Then we were able to rent his 4x4 for the remainder of the stay. Lots to do but it's best to have a vehicle to move around. The place is super quiet and relaxing. Meals are excellent. We recommend 300%."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-bold mr-3">
+                            <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5812-AMq1jbrglrSRayrq.jpeg" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <span class="font-bold text-gray-900">Hanna, Airbnb</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-green-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+             <img src="https://assets.zyrosite.com/YleW7MMX9vu4rowM/img_5811-A0xlLVg336FWraQ1.jpeg" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8 font-display">Enjoy your time at Greenleas</h2>
+            <a href="https://www.airbnb.com/rooms/735576681072241973" target="_blank" class="inline-block bg-white text-green-900 text-lg font-bold px-10 py-4 rounded-full shadow-lg hover:bg-gray-100 transition-all transform hover:-translate-y-1">
+                Book Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1B1F1C] text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <h3 class="text-2xl font-bold font-display mb-4">Greenleas</h3>
+                    <p class="text-gray-400 text-sm mb-6">Experience unique stays at our charming property.</p>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 uppercase tracking-wider text-gray-400 text-xs">Contact</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center space-x-2">
+                            <i data-feather="phone" class="w-4 h-4"></i>
+                            <span>089 064 5100</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-feather="mail" class="w-4 h-4"></i>
+                            <span>info@greenleasstay.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 uppercase tracking-wider text-gray-400 text-xs">Follow</h4>
+                     <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-feather="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-feather="twitter" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 uppercase tracking-wider text-gray-400 text-xs">Newsletter</h4>
+                    <form class="flex flex-col space-y-3">
+                        <input type="email" placeholder="Your email for inquiries" class="px-4 py-2 rounded-lg bg-white/10 border border-gray-700 focus:outline-none focus:border-green-500 text-white placeholder-gray-500 text-sm">
+                        <button type="submit" class="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                &copy; 2025. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
